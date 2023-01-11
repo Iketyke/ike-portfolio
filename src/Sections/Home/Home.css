@@ -1,0 +1,20 @@
+.App__Home {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #00FF66 0%, #00A3FF 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+.App__Home-Title {
+    align-self: center;
+    color: black;
+}
+
+.App__Home-Sub {
+    align-self: center;
+    color: black;
+}

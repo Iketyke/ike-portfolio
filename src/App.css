@@ -1,38 +1,61 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Electrolize';
   color: white;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.App::-webkit-scrollbar {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+}
+.App__About {
+  background: linear-gradient(180deg, #00A3FF 0%, #0500FF 100%);
+}
+.App__Skills {
+  background: linear-gradient(180deg, #0500FF 0%, #7000FF 100%);
+}
+.App__Projects {
+  background: linear-gradient(180deg, #7000FF 0%, #A90065 100%);
+}
+.App__Contact {
+  background: linear-gradient(180deg, #A90065 0%, #BC0606 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
