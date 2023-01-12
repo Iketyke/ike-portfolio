@@ -19,9 +19,7 @@
   width: 100vw;
   height: 100vh;
 }
-.App__Skills {
-  background: linear-gradient(180deg, #0500FF 0%, #7000FF 100%);
-}
+
 .App__Projects {
   background: linear-gradient(180deg, #7000FF 0%, #A90065 100%);
 }

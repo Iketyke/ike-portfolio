@@ -47,7 +47,7 @@ const About = () => {
               abilities to apply to my code. Equipped with the fundamentals of
               coding in Python and C++, and now, a more advanced knowledge of
               Javascript and various frameworks - I am keen to put my skills
-              into practice within the industry`} />
+              into practice within the industry.`} />
             </p>
             <Button delay={7500} content={"My Skills"} link={"#skills"} />
           </div>
