@@ -4,6 +4,7 @@
     position: absolute;
     background: rgba(55, 55, 55, 0.5);
     width: 100%;
+    z-index: 1;
 }
 
 .App__Navbar-Logo {

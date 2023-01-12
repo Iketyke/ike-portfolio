@@ -1,0 +1,35 @@
+.App__About {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #00A3FF 0%, #0500FF 100%);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-weight: 300;
+}
+
+.App__About p {
+    align-self: center;
+}
+
+.App__About-Hidden {
+    display: none;
+}
+
+.App__About-Image {
+    height: 400px;
+    width: 400px;
+    align-self: center;
+    margin: 180px;
+    border: 3px solid white;
+    border-radius: 200px;
+
+}
+
+.App__About-Container {
+    padding: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

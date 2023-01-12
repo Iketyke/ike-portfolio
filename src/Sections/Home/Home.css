@@ -6,15 +6,38 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
+    text-align: center;
+    font-weight: 300;
   }
 
 .App__Home-Title {
     align-self: center;
     color: black;
+    font-size: 40px;
+    font-weight: 400;
+    height: 40px;
+    margin: 0 0 24px 0;
 }
 
 .App__Home-Sub {
+    margin: 0;
     align-self: center;
     color: black;
+    font-size: 36px;
+    font-weight: 400;
+    width: 340px;
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width: 500px) {
+    .App__Home-Title {
+        height: 24px;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .App__Home-Sub {
+        width: 155px;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
 }
