@@ -4,6 +4,7 @@
     height: 100vh;
     background: linear-gradient(180deg, #00A3FF 0%, #0500FF 100%);
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     text-align: center;
     font-weight: 300;
@@ -21,15 +22,116 @@
     height: 400px;
     width: 400px;
     align-self: center;
-    margin: 180px;
     border: 3px solid white;
     border-radius: 200px;
 
 }
 
 .App__About-Container {
-    padding: 180px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+.App__About-Title {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.App__About-Desc {
+    text-align: left;
+    font-size: 24px;
+    width: 750px;
+    margin-bottom: 32px;
+    height: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+    .App__About-Desc {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .App__About {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .App__About-Title {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    
+    .App__About-Desc {
+        text-align: left;
+        font-size: 24px;
+        width: 600px;
+        margin-bottom: 32px;
+        height: 300px;
+    }
+    .App__About-Image {
+        height: 400px;
+        width: 400px;
+        border-radius: 200px;
+    
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .App__About-Desc {
+        font-size: 20px;
+        width: 500px;
+    }
+    .App__About-Image {
+        height: 350px;
+        width: 350px;
+        border-radius: 175px;
+    
+    }
+}
+@media screen and (max-width: 550px) {
+    .App__About-Title {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    
+    .App__About-Desc {
+        text-align: left;
+        font-size: 16px;
+        width: 350px;
+        margin-bottom: 32px;
+        height: 250px;
+    }
+    .App__About-Image {
+        height: 250px;
+        width: 250px;
+        border-radius: 125px;
+    
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .App__About-Title {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    
+    .App__About-Desc {
+        text-align: left;
+        font-size: 16px;
+        width: 300px;
+        margin-bottom: 32px;
+        height: 200px;
+        overflow: scroll;
+    }
+    .App__About-Image {
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+    
+    }
+}
+
