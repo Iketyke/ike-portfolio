@@ -8,9 +8,164 @@
   justify-content: center;
   align-items: center;
 }
+.App__Skills-Title {
+  font-size: 40px;
+}
+
+.App__Skills-Container {
+  display: flex; 
+  gap: 2%;
+  height: 60%;
+  margin:0 16px 32px 16px;
+  justify-content: center;
+}
+.App__Skills-Container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  width: 100%;
+}
+
 
 .card{
     background-color: white;
     color: black;
     border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.App__Skills-Languages {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  padding: 16px;
+}
+.App__Skills-Languages img{
+  aspect-ratio: 1 1;
+  height: 27.5%;
+}
+
+.App__Skills-Frontend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+h2{
+  margin:0 0 8px 0;
+}
+
+.App__Skills-Frontend {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: 50%;
+}
+
+.App__Skills-Frontend-Main {
+  display: flex;
+  flex-direction: row;
+  height: 80%;  
+  gap: 16px;
+}
+.App__Skills-Frontend-Main img {
+  height: 60%;
+  align-self: center;
+}
+.App__Skills-Frontend-Main div {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.App__Skills-BackendTesting {
+  display: flex;
+  height: 50%;
+  gap: 16px;
+}
+
+.App__Skills-Backend {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.App__Skills-Backend-Main {
+  display: flex;
+  flex-direction: row;
+  
+}
+.App__Skills-Backend-Main img{
+  height: 100%;
+}
+.App__Skills-Backend-Main div img{
+  height: 50%;
+}
+
+.App__Skills-Testing {
+  height: fit-content;
+  padding: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .App__Skills-Backend img{
+    height: 80%;
+  }
+  .App__Skills-Backend-Main div img{
+    height: 40%;
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .App__Skills-Container {
+    margin-bottom: 48px;
+  }
+  .App__Skills-Container2 {
+    width: 60%;
+  }
+  .App__Skills-BackendTesting {
+    flex-direction: column;
+    height: 60%;
+  }
+  .App__Skills-Frontend {
+    height: 30%;
+  }
+  .App__Skills-Backend {
+    height: 45%;
+    align-items: center;
+  }
+  .App__Skills-Backend-Main {
+    gap: 16px;
+  }
+  .App__Skills-Backend img{
+    height: 60%;
+  }
+  .App__Skills-Backend-Main div {
+    display: flex;
+    flex-direction: column;
+  }
+  .App__Skills-Backend-Main div img{
+    height: 30%;
+  }
+  .App__Skills-Testing {
+    height: 45%;
+  }
+
+}
+
+@media screen and (max-width: 950px) { 
+  .App__Skills-Container2 {
+    width: fit-content;
+  }
+
+  .App__Skills-Frontend img {
+    height: 45%;
+  }
+  .App__Skills-Backend-Testing {
+    width: fit-content;
+  }
 }
