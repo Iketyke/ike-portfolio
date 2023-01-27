@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Sections/Home/Home';
 import About from './Sections/About/About';
 import Skills from './Sections/Skills/Skills';
+import Contact from './Sections/Contact/Contact';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <About/> 
       <Skills/>
       <section className='App__Projects section' id='projects'></section>
-      <section className='App__Contact section' id='contact'></section>
+      <Contact/>
     </div>
   );
 }

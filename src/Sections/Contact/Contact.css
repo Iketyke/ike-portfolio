@@ -1,0 +1,88 @@
+.App__Contact {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #a90065 0%, #bc0606 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  gap: 3em;
+}
+h1 {
+  font-size: 40px;
+}
+input {
+  font-size: 24px;
+  font-family: "Electrolize";
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+}
+textarea {
+  font-size: 24px;
+  font-family: "Electrolize";
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+  height: 250px;
+  resize: none;
+}
+.App__Contact-Message {
+    font-size: 24px;
+  font-family: "Electrolize";
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+  
+}
+.App__Contact-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.App__Contact-Form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .App__Contact-Form form div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+
+
+
+  .App__Contact-Submit {
+    display: flex;
+    align-self: center;
+    width: fit-content;
+    border: 3px solid black;
+    background: white;
+    font-size: 24px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 4px 0px #3F3F3F;
+    transition: opacity ease;
+    padding: 4px 8px;
+}
+
+.App__Contact-Submit:active {
+    margin-top: 4px;
+    box-shadow: none;
+}
+
+.error::placeholder {
+  color: red;
+}

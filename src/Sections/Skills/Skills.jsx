@@ -54,12 +54,11 @@ const Skills = () => {
                   alt="React, React Native, CSS, and HTML Logos"
                 />
               </div>
-              
+
                 <div className="App__Skills-Backend animate__animated animate__zoomIn card">
                   <h2>
                     <TypingText text={"Back End"} time={1000} delay={0} />
                   </h2>
-
                   <img
                     src={BackendLogos}
                     alt="Firebase, Express and PSQL Logos"
